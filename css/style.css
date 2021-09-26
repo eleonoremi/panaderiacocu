@@ -1,0 +1,17 @@
+
+
+.efectoimg:hover{
+    filter: opacity(50%);
+    
+}
+/*nos creamos una media queri ,por que la imagen del slaider es chica en dispositivos chicos y el nav es grande*/
+@media all and (max-width: 576px){
+    .img-responsive{
+        /*cambio la altura */
+        height: 250px;
+        object-fit: cover;
+    }
+    .centrar{
+        text-align: center;
+    }
+}

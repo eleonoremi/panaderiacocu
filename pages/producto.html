@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sitio de la panaderia cocu" />
+    <meta name="author" content="Eleonor Cardozo" />
+    <meta name="keywords" content="pam,facturas,tortas,tartas,sandwich" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9c0b7d4887.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Panaderia Cocu</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../img/cocu_logo-450.png"
+              alt="Logo de cocu"
+              width="100"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="producto.html"
+                  >Productos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactos.html">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--dentro del main pondremos una clase contenedora para que nos de margen-->
+    <main class="container">
+      <!--dentro de mi section(hago una clase para darle margen arriba y abajo que es (my))-->
+      <section class="my-5">
+        <!-- la clase display-2 (le dara otra forma al texto), y text-center(hace que el texto este centrado)-->
+        <h1 class="display-2 text-center">Galeria de Productos</h1>
+        <hr />
+        <!--ahora mostraremos los productos que ofrece mi panaderia , osea una galeria-->
+        <!--lo haremos con un sistema de grilla y que este dentro de un article-->
+        <article class="row">
+          <!--la clase row(nos habilita nuestra grilla )-->
+          <!--hago div (estos nos permite darle valores para que se vean en distintos dispositivos como celular,tablet,etc)-->
+          <div class="col-sm-12 col-md-4 col-lg-3 my-2">
+            <!--aqui me creo una card-->
+            <div class="card">
+              <img
+                src="../img/productos/Torta-de-chocolate_00098_portfolio.jpg"
+                alt="tarta de chocolate"
+              />
+              <div class="card-body">
+                <!--para destacar un producto como de oferta,nuevo,etc, utilizo (<span class="badge(bg-warning") es el color)nuevo</span-->
+                <h5 class="card-title">Tarta de chocolate <span class="badge bg-warning">Nuevo</span></h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam dolorum minima est, quaerat nisi quas.
+                </p>
+                <!--agregamos una boton con una clase (la clase btn hace:que aparezca el boton y btn-primary le da el color al boton)-->
+                <!--(data-bs-toggle)llama a la ventana modal -->
+                <!--(data-bs-target) es a q modal esta vinculado -->
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalproducto"
+                >
+                  ver mas
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 my-2">
+            <!--aqui me creo una card-->
+            <div class="card">
+              <img src="../img/productos/Croissant_00018_portfolio1.jpg" alt="Medialunas">
+              <div class="card-body">
+                <h5 class="card-title">Medialunas</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam dolorum minima est, quaerat nisi quas.
+                </p>
+                <!--me creo una etiqueta a y la disfraso como un boton y queda y funciona igual que un boton-->
+                <a href="productomedialunas.html" class="btn btn-primary">ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 my-2">
+            <!--aqui me creo una card-->
+            <div class="card">
+              <img
+                src="../img/productos/Torta-de-chocolate_00098_portfolio.jpg"
+                alt="tarta de chocolate"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Torta de chocolate</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam dolorum minima est, quaerat nisi quas.
+                </p>
+                <!--me creo una etiqueta a y la disfraso como un boton y queda y funciona igual que un boton pero le agregamos disabled que hace que se desabilite el boton osea no funcione-->
+                <a href="#" class="btn btn-primary disabled">ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 my-2">
+            <!--aqui me creo una card-->
+            <div class="card">
+              <img
+                src="../img/productos/Torta-de-chocolate_00098_portfolio.jpg"
+                alt="tarta de chocolate"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tarta de chocolate</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam dolorum minima est, quaerat nisi quas.
+                </p>
+                <!--me creo una etiqueta a y la disfraso como un boton y queda y funciona igual que un boton pero le agregamos disabled que hace que se desabilite el boton osea no funcione-->
+                <a href="#" class="btn btn-primary disabled">ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 my-2">
+            <!--aqui me creo una card-->
+            <div class="card">
+              <img
+                src="../img/productos/Torta-de-chocolate_00098_portfolio.jpg"
+                alt="tarta de chocolate"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tarta de chocolate</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam dolorum minima est, quaerat nisi quas.
+                </p>
+                <!--me creo una etiqueta a y la disfraso como un boton y queda y funciona igual que un boton pero le agregamos disabled que hace que se desabilite el boton osea no funcione-->
+                <a href="#" class="btn btn-primary disabled">ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 my-2">
+            <!--aqui me creo una card-->
+            <div class="card">
+              <img
+                src="../img/productos/Torta-de-chocolate_00098_portfolio.jpg"
+                alt="tarta de chocolate"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tarta de chocolate</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam dolorum minima est, quaerat nisi quas.
+                </p>
+                <!--me creo una etiqueta a y la disfraso como un boton y queda y funciona igual que un boton pero le agregamos disabled que hace que se desabilite el boton osea no funcione-->
+                <a href="#" class="btn btn-primary disabled">ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 my-2">
+            <!--aqui me creo una card-->
+            <div class="card">
+              <img
+                src="../img/productos/Torta-de-chocolate_00098_portfolio.jpg"
+                alt="tarta de chocolate"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tarta de chocolate</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam dolorum minima est, quaerat nisi quas.
+                </p>
+                <!--me creo una etiqueta a y la disfraso como un boton y queda y funciona igual que un boton pero le agregamos disabled que hace que se desabilite el boton osea no funcione-->
+                <a href="#" class="btn btn-primary disabled">ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 my-2">
+            <!--aqui me creo una card-->
+            <div class="card">
+              <img
+                src="../img/productos/Torta-de-chocolate_00098_portfolio.jpg"
+                alt="tarta de chocolate"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tarta de chocolate</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam dolorum minima est, quaerat nisi quas.
+                </p>
+                <!--me creo una etiqueta a y la disfraso como un boton y queda y funciona igual que un boton pero le agregamos disabled que hace que se desabilite el boton osea no funcione-->
+                <a href="#" class="btn btn-primary disabled">ver mas</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 col-lg-3 my-2">
+            <!--aqui me creo una card-->
+            <div class="card">
+              <img
+                src="../img/productos/Torta-de-chocolate_00098_portfolio.jpg"
+                alt="tarta de chocolate"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tarta de chocolate</h5>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Laboriosam dolorum minima est, quaerat nisi quas.
+                </p>
+                <!--me creo una etiqueta a y la disfraso como un boton y queda y funciona igual que un boton pero le agregamos disabled que hace que se desabilite el boton osea no funcione-->
+                <a href="#" class="btn btn-primary disabled">ver mas</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <nav aria-label="Control de paginacion">
+          <ul class="pagination justify-content-center">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </main>
+    <!-- Modal de producto-->
+    <!--la clase fade (hace que aparesca y desaparesca la ventana suavemente )-->
+    <div
+      class="modal fade"
+      id="modalproducto"
+      tabindex="-1"
+      aria-labelledby="tituloModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!--en el (h5)tenemos el nombre de la ventana modal-->
+            <h5 class="modal-title" id="tituloModal">Tarta de chocolate</h5>
+            <!--este boton que viene es de la (x)para cerrar la ventana modal-->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <!--la clase(w-100)significa que quiero que la imagen avarque el 100%-->
+            <img src="../img/productos/Torta-de-chocolate_00098_portfolio.jpg" alt="tarta de chocolate" class="w-100">
+            <!--la etiqueta (b) hace que se ponga en negrita o que destaque el parrafo o lo q uno quiere destacar-->
+            <p class="mt-2"><b>Precio:</b>$200</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+      <footer class="bg-dark text-light">
+        <article class="container py-5">
+          <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4 centrar">
+              <a class="navbar-brand" href="index.html">
+                <img src="../img/cocu_logo-450.png " alt="Logo de cocu" width="100" />
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <h5 class="mb-2">Horarios de Atencion:</h5>
+              <!--me creo una lista -->
+              <ul>
+                <li>Lunes a Viernes:09hs-18hs</li>
+                <li>Sabados,Domingo y Feriados:09hs-14hs</li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-4">
+              <h5>Seguinos en Nuestrs Redes:</h5>
+              <!--lo que esta en la (i)es el logo o imagen que se quiere agregar en este caso es el (icono del facebook)-->
+              <!--lo que esta en la (i)es el logo o imagen que se quiere agregar en este caso es el (icono del instagram)-->
+              <!--lo que esta en la (i)es el logo o imagen que se quiere agregar en este caso es el (icono del twitter)-->
+              <article>
+                <i class="fab fa-facebook-square fa-2x m-2"></i>
+                <i class="fab fa-twitter-square fa-2x m-2"></i>
+                <i class="fab fa-instagram fa-2x m-2"></i>
+              </article>
+                  
+            </div>
+          </div>
+        </article>
+    </footer>
+    <!-- al script le pongo los (../js/bootstrap.min.js) para linkearla y que ande la pag -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>

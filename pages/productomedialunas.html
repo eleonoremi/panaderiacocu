@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sitio de la panaderia cocu" />
+    <meta name="author" content="Eleonor Cardozo" />
+    <meta name="keywords" content="pam,facturas,tortas,tartas,sandwich" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/9c0b7d4887.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Panaderia Cocu</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../img/cocu_logo-450.png"
+              alt="Logo de cocu"
+              width="100"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"aria-current="page"href="producto.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactos.html">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!--dentro del main pondremos una clase contenedora para que nos de margen-->
+    <main class="container">
+        <nav aria-label="breadcrumb pt-3 bg-light">
+            <div class="container">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="producto.html">Producto</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Medialuna</li>
+                  </ol>
+            </div>
+          </nav>
+        <section class="my-5">
+            <h1 class="display-2 text-center">Croissant</h1>
+            <hr>
+            <article class="row">
+                <div class="col-sm-12 col-md-6 mb-3">
+                    <img src="../img/productos/Croissant_00018_portfolio1.jpg" alt="Croissant" class="w-100">
+                </div>
+                <div class="col-sm-12 col-md-6 ">
+                    <!--la clase (lead)sirve para destacar un parrafo-->
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi ea, natus eos nam saepe, eaque, numquam quos magni nostrum dolor earum iusto molestiae explicabo. Dicta doloribus dolore nemo veniam molestias.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores illum tempora aspernatur tenetur ea earum exercitationem, aperiam nihil facilis quos odit sed commodi quidem est fugit sapiente quam modi rerum.</p>
+                </div>
+            </article>
+            <div class="alert alert-info" role="alert">
+              <p>promocion 12 medialunas a :$120</p>
+
+            </div>
+        </section>
+    </main>
+    <footer class="bg-dark text-light">
+      <article class="container py-5">
+        <div class="row">
+          <div class="col-sm-12 col-md-4 col-lg-4 centrar">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="../img/cocu_logo-450.png "
+                alt="Logo de cocu"
+                width="100"
+              />
+            </a>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <h5 class="mb-2">Horarios de Atencion:</h5>
+            <!--me creo una lista -->
+            <ul>
+              <li>Lunes a Viernes:09hs-18hs</li>
+              <li>Sabados,Domingo y Feriados:09hs-14hs</li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <h5>Seguinos en Nuestrs Redes:</h5>
+            <!--lo que esta en la (i)es el logo o imagen que se quiere agregar en este caso es el (icono del facebook)-->
+            <!--lo que esta en la (i)es el logo o imagen que se quiere agregar en este caso es el (icono del instagram)-->
+            <!--lo que esta en la (i)es el logo o imagen que se quiere agregar en este caso es el (icono del twitter)-->
+            <article>
+              <i class="fab fa-facebook-square fa-2x m-2"></i>
+              <i class="fab fa-twitter-square fa-2x m-2"></i>
+              <i class="fab fa-instagram fa-2x m-2"></i>
+            </article>
+          </div>
+        </div>
+      </article>
+    </footer>
+    <!-- al script le pongo los (../js/bootstrap.min.js) para linkearla y que ande la pag -->
+    <script src="../js/bootstrap.min.js"></script>
+  </body>
+</html>
